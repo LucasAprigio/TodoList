@@ -1,0 +1,174 @@
+body{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(81, 151, 184);
+    margin: 0;
+    padding: 0;
+}
+h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.todo-list{
+    background-color: white;
+    width: 500px;
+    border-radius:10px;
+    padding: 20px;
+    
+}
+#text-task{
+    background-color: white;
+    width: 90%;
+    box-sizing: border-box;
+    height: 30px;
+    border: solid, 2px,rgb(81, 151, 184);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 16px;
+    color: rgba(0, 0, 0 , 0.5);
+    font-style: italic;
+    
+}
+.tasks{
+   padding: 50px 0px;
+   margin: auto;
+}
+.container-add-task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.add-tasks{
+    background-color:rgb(81, 151, 184) ;
+    border: none;
+    height: 30px;
+    width: 30px;
+    color: white;
+    font-size: 25px;
+}
+.add-tasks:hover{
+    background-color: rgb(76, 136, 163);
+}
+
+/* Começo do código de estilização de checkbox da W3SCHOOL*/
+.container{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #a8a7a7;
+    
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #747474;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+/* Fim do código de estilização de checkbox da W3SCHOOL*/
+.task-and-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid, rgba(160, 159, 159, 0.5);
+    margin-bottom: 10px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+.progress{
+
+    text-align: center;
+    background-color: green;
+    margin: 10px;
+    height: 30px;
+    width: 270px;
+}
+.remove-checked{
+    height: 30px;
+    background-color:rgb(81, 151, 184);
+    border: none;
+    color: white;
+}
+.remove-checked:hover{
+    background-color: rgb(76, 136, 163);
+}
+button{
+    cursor: pointer;
+}
+.edit{
+    background-color:rgba(81, 151, 184,0.5) ;
+    border: none;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 10px;
+    color: rgba(0,0,0, 0.5);
+}
+.delete{
+    background-color:rgba(81, 151, 184,0.5) ;
+    border: none;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 10px;
+    color: white;
+}
+.delete:hover{
+    background-color: rgb(76, 136, 163);
+}
+.edit:hover{
+    background-color: rgb(76, 136, 163);
+}
